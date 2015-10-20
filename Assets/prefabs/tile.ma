@@ -1,6 +1,6 @@
 //Maya ASCII 2016 scene
 //Name: tile.ma
-//Last modified: Tue, Oct 20, 2015 04:09:27 PM
+//Last modified: Tue, Oct 20, 2015 04:16:46 PM
 //Codeset: UTF-8
 requires maya "2016";
 currentUnit -l centimeter -a degree -t film;
@@ -13,13 +13,13 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "8CCA34C9-884D-DBFC-2860-D08FA7A56934";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -2.6530717869047211 19.056701537234048 9.1044445460412842 ;
-	setAttr ".r" -type "double3" -69.338352729604111 -12.59999999999971 1.6295214948173718e-15 ;
+	setAttr ".t" -type "double3" 1.6439627974941837 7.4835014504003663 19.00604078114975 ;
+	setAttr ".r" -type "double3" -20.138352729605796 5.0000000000003659 9.9771996363888825e-17 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "0E326BB7-C644-FAE5-F1F1-FCB721EB8521";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999986;
-	setAttr ".coi" 27.730324051125109;
+	setAttr ".coi" 24.639349232994348;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -75,6 +75,9 @@ createNode transform -n "pCube1";
 	rename -uid "22300F90-8E45-DBB7-E6C6-7C95FE387605";
 	setAttr ".t" -type "double3" 0 2.1627103124878744 0 ;
 	setAttr ".s" -type "double3" 1 0.7005347789713271 1 ;
+	setAttr ".rp" -type "double3" 0 0.29284179668138 0 ;
+	setAttr ".sp" -type "double3" 0 0.4180260644751882 0 ;
+	setAttr ".spt" -type "double3" 0 -0.12518426779380817 0 ;
 createNode mesh -n "pCubeShape1" -p "pCube1";
 	rename -uid "051C1D68-B045-7AF1-EEA0-B799A90E9EDB";
 	setAttr -k off ".v";
