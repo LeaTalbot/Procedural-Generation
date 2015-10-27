@@ -10,7 +10,7 @@ public class PathmakerWater : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		
-		if (counter < 35) {
+		if (counter < 25) {
 			
 			float rand = Random.Range (0.0f, 1.0f);
 			
