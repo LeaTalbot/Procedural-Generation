@@ -46,6 +46,8 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\scripts\Pathmaker.cs" />
+     <Compile Include="Assets\scripts\PathmakerWater.cs" />
+     <Compile Include="Assets\scripts\RestartScript.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
